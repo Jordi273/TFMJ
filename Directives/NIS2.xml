@@ -1,0 +1,20 @@
+<directive name="NIS2" >
+  <part name="21st article">
+    <test name="c">
+      <comment>Check if PDF exists</comment>
+      <PDFmetaData name="PDF exists">
+        <extension>.pdf</extension>
+        <magicNumber>%PDF</magicNumber>
+        <minimumSize>1024</minimumSize>
+        <maximumsize>1073741824</maximumsize>
+      </PDFmetaData>
+      <comment>Check if PDF is signed</comment>
+      <PDFSignature>
+        ANYONE
+      </PDFSignature>
+      <comment>Check OCR data</comment>
+    </test>
+    <test name="g"></test>
+    <test name="h"></test>
+  </part>
+</directive>
